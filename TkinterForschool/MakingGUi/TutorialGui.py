@@ -6,10 +6,12 @@ MainScreen = Tk()
 MainScreen.geometry("300x250")
 db = sqlite3.connect("CustomerLogIn.db")
 cursor = db.cursor()
+MainScreen.configure(bg="#1B1D21")
 def MainPage():
-    TitleLabel = Label(MainScreen, text="Main Page").pack(pady = 10)
-    RegisterButton = Button(MainScreen, text="Register", command= RegisterPage).pack(pady = 10)
-    LoginButton = Button(MainScreen,text="Log in", command= LoginPage).pack(pady = 10)
+    BigGap = Label(MainScreen, text ="", bg="#1B1D21").pack(pady = 30)
+    TitleLabel = Label(MainScreen, text="Main Page", bg="#5A5A5A", font=("Comfortaa",40)).pack(pady = 50)
+    RegisterButton = Button(MainScreen,highlightbackground="white", text="Register",bg='#1B1D21', width = 25, height = 10, command= RegisterPage).pack(pady = 10)
+    LoginButton = Button(MainScreen,highlightbackground="white",bg='#1B1D21',text="Log in", width = 25, height = 10, command= LoginPage).pack(pady = 10)
     
 
 def LoginPage():
@@ -23,7 +25,7 @@ def LoginPage():
     Entry(LoginScreen,textvariable = UsernameInputted).pack(pady = 10)
     PasswordLabel = Label(LoginScreen, text = "Password").pack()
     Entry(LoginScreen,textvariable = PasswordInputted, show = "*").pack(pady = 10)
-    LoginButton = Button(LoginScreen, text ="Log in",command=lambda: GettingPasswordFromDatabaseAndChecking(UsernameInputted.get(),PasswordInputted.get(),LoginScreen)).pack()
+    LoginButton = Button(LoginScreen, text ="Log in", height= 3, width = 15,command=lambda: GettingPasswordFromDatabaseAndChecking(UsernameInputted.get(),PasswordInputted.get(),LoginScreen)).pack()
     
 def RegisterPage():
     global MainScreen
@@ -42,22 +44,25 @@ def RegisterPage():
 def AddingToDatabase(UsernameInputted,Passwordinputted):
     cursor.execute(f"INSERT INTO Customers Values(\"{UsernameInputted}\",\"{Passwordinputted}\")") # Need apostrpahes as it makes them strings for the db
     db.commit()
-
+#if UsernameInputted.get() == "" or PasswordInputted.get() == "":
+        #messagebox.showinfo("showinfo","Put data in!!")
+        #LoginPage()
+        #LoginScreen.destroy()
+        #This is code for telling the user to add data if they haven't inputted anything
 def GettingPasswordFromDatabaseAndChecking(UsernameInputted,PasswordInputted,LoginScreen):
-    print(UsernameInputted)
     cursor.execute(f"SELECT Password FROM Customers WHERE Username = \"{UsernameInputted}\"")
     print("SELECT Password FROM Customers WHERE Username = \"{UsernameInputted}\"")
     PasswordOfAccount = [row[0] for row in cursor.fetchall()]
     print(PasswordOfAccount)
-    if PasswordInputted == PasswordOfAccount[0]:
+    if PasswordInputted in PasswordOfAccount:
         messagebox.showinfo("showinfo","Successfully logged in")
         #There should be a function here to take you to the next page but teher is no page so it just shows that you have logged in!
-    elif PasswordOfAccount == None:
+    elif PasswordOfAccount == []:
         messagebox.showinfo("showinfo","Username does not exist. Go register!")
         RegisterPage()
     else:
-        messagebox.showinfo("showinfo","Incorrect password or username")
-    LoginScreen.destroy()
+        messagebox.showinfo("showinfo","Incorrect password")
+    
         
 def CheckingDataIsValid(UsernameInputted,PasswordInputted):
     global RegisterScreen
@@ -72,7 +77,7 @@ def CheckingDataIsValid(UsernameInputted,PasswordInputted):
     else:
         AddingToDatabase(UsernameInputted,PasswordInputted)
         messagebox.showinfo("showinfo",f"You have successfully registered with the username {UsernameInputted}")
-        TestLabel = Label(RegisterScreen, text="You have successfully registerd").pack()
+        TestLabel = Label(RegisterScreen, text="You have successfully registered").pack()
         time.sleep(3)
     RegisterScreen.destroy()
         
