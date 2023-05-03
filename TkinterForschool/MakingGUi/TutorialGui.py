@@ -16,7 +16,7 @@ def LoginPage():
     global MainScreen
     UsernameInputted = StringVar()
     PasswordInputted = StringVar()
-    LoginScreen = Toplevel(MainScreen) # Makes this teh top level screen whihc essentially makes it the new screen from teh main screen
+    LoginScreen = Toplevel(MainScreen) # Makes this teh top level screen which essentially makes it the new screen from teh main screen
     LoginScreen.title("Login Window")
     BigGap = Label(LoginScreen, text ="   ").pack(pady = 100)
     UsernameLabel = Label(LoginScreen, text="Username").pack(pady = 10)
@@ -45,10 +45,11 @@ def AddingToDatabase(UsernameInputted,Passwordinputted):
 
 def GettingPasswordFromDatabaseAndChecking(UsernameInputted,PasswordInputted,LoginScreen):
     print(UsernameInputted)
-    cursor.execute("SELECT Password FROM Customers WHERE Username = \"{UsernameInputted}\"")
-    PasswordOfAccount = cursor.fetchall()
+    cursor.execute(f"SELECT Password FROM Customers WHERE Username = \"{UsernameInputted}\"")
+    print("SELECT Password FROM Customers WHERE Username = \"{UsernameInputted}\"")
+    PasswordOfAccount = [row[0] for row in cursor.fetchall()]
     print(PasswordOfAccount)
-    if PasswordOfAccount == PasswordInputted:
+    if PasswordInputted == PasswordOfAccount[0]:
         messagebox.showinfo("showinfo","Successfully logged in")
         #There should be a function here to take you to the next page but teher is no page so it just shows that you have logged in!
     elif PasswordOfAccount == None:
