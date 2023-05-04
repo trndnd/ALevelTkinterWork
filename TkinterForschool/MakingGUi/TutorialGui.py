@@ -6,12 +6,13 @@ MainScreen = Tk()
 MainScreen.geometry("300x250")
 db = sqlite3.connect("CustomerLogIn.db")
 cursor = db.cursor()
-MainScreen.configure(bg="#1B1D21")
+
 def MainPage():
+    MainScreen.configure(bg="#1B1D21")
     BigGap = Label(MainScreen, text ="", bg="#1B1D21").pack(pady = 30)
     TitleLabel = Label(MainScreen, text="Main Page", bg="#5A5A5A", font=("Comfortaa",40)).pack(pady = 50)
-    RegisterButton = Button(MainScreen,highlightbackground="white", text="Register",bg='#1B1D21', width = 25, height = 10, command= RegisterPage).pack(pady = 10)
-    LoginButton = Button(MainScreen,highlightbackground="white",bg='#1B1D21',text="Log in", width = 25, height = 10, command= LoginPage).pack(pady = 10)
+    RegisterButton = Button(MainScreen,highlightbackground="white", text="Register",bg='grey', width = 25, height = 10, command= RegisterPage).pack(pady = 10)
+    LoginButton = Button(MainScreen,highlightbackground="white",bg='grey',text="Log in", width = 25, height = 10, command= LoginPage).pack(pady = 10)
     
 
 def LoginPage():
@@ -20,7 +21,8 @@ def LoginPage():
     PasswordInputted = StringVar()
     LoginScreen = Toplevel(MainScreen) # Makes this teh top level screen which essentially makes it the new screen from teh main screen
     LoginScreen.title("Login Window")
-    BigGap = Label(LoginScreen, text ="   ").pack(pady = 100)
+    LoginScreen.configure(bg="#1B1D21")
+    BigGap = Label(LoginScreen, text ="   ", bg="#1B1D21").pack(pady = 100)
     UsernameLabel = Label(LoginScreen, text="Username").pack(pady = 10)
     Entry(LoginScreen,textvariable = UsernameInputted).pack(pady = 10)
     PasswordLabel = Label(LoginScreen, text = "Password").pack()
@@ -31,14 +33,15 @@ def RegisterPage():
     global MainScreen
     UsernameInputted = StringVar()
     PasswordInputted = StringVar()
-    RegisterScreen = Toplevel(MainScreen) # Makes this teh top level screen whihc essentially makes it the new screen from teh main screen
+    RegisterScreen = Toplevel(MainScreen) # Makes this the top level screen whihc essentially makes it the new screen from teh main screen
     RegisterScreen.title("Register Window")
-    BigGap = Label(RegisterScreen, text ="   ").pack(pady = 100)
+    RegisterScreen.configure(bg="#1B1D21")
+    BigGap = Label(RegisterScreen, text ="   ", bg = "#1B1D21").pack(pady = 100)
     UsernameLabel = Label(RegisterScreen, text="Username").pack(pady = 10)
     Entry(RegisterScreen, textvariable= UsernameInputted).pack(pady = 10)
     PasswordLabel = Label(RegisterScreen, text = "Password").pack()
     Entry(RegisterScreen,textvariable= PasswordInputted, show="*").pack(pady = 10)
-    RegisterButton = Button(RegisterScreen, text = "register", command=lambda: CheckingDataIsValid(UsernameInputted.get(),PasswordInputted.get())).pack(pady = 10)
+    RegisterButton = Button(RegisterScreen, text = "register", height =3, width=15, command=lambda: CheckingDataIsValid(UsernameInputted.get(),PasswordInputted.get())).pack(pady = 10)
     
 
 def AddingToDatabase(UsernameInputted,Passwordinputted):
@@ -74,6 +77,8 @@ def CheckingDataIsValid(UsernameInputted,PasswordInputted):
         messagebox.showinfo("showinfo","Username already exists")
     elif len(PasswordInputted) < 10:
         messagebox.showinfo("showinfo", "Password should be over 10 characters")
+    elif UsernameInputted == "":
+        messagebox.showinfo("showinfo","Input a username!. You can't leav the entry box empty!")
     else:
         AddingToDatabase(UsernameInputted,PasswordInputted)
         messagebox.showinfo("showinfo",f"You have successfully registered with the username {UsernameInputted}")
