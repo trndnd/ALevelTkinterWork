@@ -1,0 +1,146 @@
+<mxfile host="app.diagrams.net" modified="2024-01-03T18:23:07.183Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5.1 Safari/605.1.15" etag="LJCJUfsxEKnKSjH9P0vK" version="22.1.16" type="github">
+  <diagram name="Page-1" id="VIa_k0GeJmzwRV_naItp">
+    <mxGraphModel dx="1195" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-2" target="Fbnn-sD7wGBO2zR1zrUd-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-2" value="Freelancer Requested Orders" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-3" target="Fbnn-sD7wGBO2zR1zrUd-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-3" value="Fetch requested orders linked to freelancer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-6" target="Fbnn-sD7wGBO2zR1zrUd-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-6" value="Output current freelancer requested order with view order in detail button" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="410" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-9" target="Fbnn-sD7wGBO2zR1zrUd-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-14" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Fbnn-sD7wGBO2zR1zrUd-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.08" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-9" target="Fbnn-sD7wGBO2zR1zrUd-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-9" value="View requested order in detail button clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="560" width="160" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-12" target="Fbnn-sD7wGBO2zR1zrUd-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-12" value="Output requested order in more detail" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="602.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="370" as="targetPoint" />
+            <mxPoint x="300" y="820" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="240" y="840" />
+              <mxPoint x="240" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-25" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Fbnn-sD7wGBO2zR1zrUd-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.2901" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-15" value="Go to next freelancer requested order" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-24" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-20" target="Fbnn-sD7wGBO2zR1zrUd-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-20" value="Current requested Order != Last requested order" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="485" y="760" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-26" target="Fbnn-sD7wGBO2zR1zrUd-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-30" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Fbnn-sD7wGBO2zR1zrUd-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.0252" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-32" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-26" target="Fbnn-sD7wGBO2zR1zrUd-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-26" value="Back button clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="920" y="791.25" width="100" height="97.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-37" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-31" target="Fbnn-sD7wGBO2zR1zrUd-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="1130" />
+              <mxPoint x="970" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-31" target="Fbnn-sD7wGBO2zR1zrUd-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-48" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Fbnn-sD7wGBO2zR1zrUd-47" vertex="1" connectable="0">
+          <mxGeometry x="0.1192" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-31" value="Decline Order button clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="915" y="968.75" width="110" height="111.25" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1024" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-33" value="Decline Order" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="994.37" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-36" target="Fbnn-sD7wGBO2zR1zrUd-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-46" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Fbnn-sD7wGBO2zR1zrUd-45" vertex="1" connectable="0">
+          <mxGeometry x="-0.0677" y="3" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1180" y="1220" />
+              <mxPoint x="1180" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_c1V6g-XyB0xYjOZea3d-1" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Fbnn-sD7wGBO2zR1zrUd-49">
+          <mxGeometry x="-0.1076" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-36" value="Accept order button clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="912.5" y="1160" width="115" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-40" target="Fbnn-sD7wGBO2zR1zrUd-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-40" value="Accept Order" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
