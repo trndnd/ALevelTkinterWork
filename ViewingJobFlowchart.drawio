@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-03T18:50:13.241Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5.1 Safari/605.1.15" etag="LhzhA1A77RPD1u6JdZpG" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-05T10:14:17.781Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5.1 Safari/605.1.15" etag="8Z_lUNlasFuHtEDdj9BI" version="22.1.16" type="github">
   <diagram name="Page-1" id="VIa_k0GeJmzwRV_naItp">
-    <mxGraphModel dx="1434" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -112,24 +112,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-31" value="Decline Order button clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-31" value="Delete Job &lt;br&gt;Button Clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="915" y="968.75" width="110" height="111.25" as="geometry" />
         </mxCell>
         <mxCell id="Fbnn-sD7wGBO2zR1zrUd-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-33" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="670" y="1024" as="targetPoint" />
+            <mxPoint x="670" y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-33" value="Decline Order" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-33" value="Delete Job" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="720" y="994.38" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-36" target="Fbnn-sD7wGBO2zR1zrUd-40" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-46" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Fbnn-sD7wGBO2zR1zrUd-45" vertex="1" connectable="0">
-          <mxGeometry x="-0.0677" y="3" relative="1" as="geometry">
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="Fbnn-sD7wGBO2zR1zrUd-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-36" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -145,19 +137,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-36" value="Accept order button clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="912.5" y="1160" width="115" height="120" as="geometry" />
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-36" target="PP2J6lRR4GeI_2FX9Bz--3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Fbnn-sD7wGBO2zR1zrUd-40" target="Fbnn-sD7wGBO2zR1zrUd-20" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="670" y="1220" />
-              <mxPoint x="670" y="840" />
-            </Array>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--12" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PP2J6lRR4GeI_2FX9Bz--4">
+          <mxGeometry x="-0.1455" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-40" value="Accept Order" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="710" y="1190" width="120" height="60" as="geometry" />
+        <mxCell id="Fbnn-sD7wGBO2zR1zrUd-36" value="Change Job details Button Clicked" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="912.5" y="1160" width="115" height="120" as="geometry" />
         </mxCell>
         <mxCell id="B3OjjdE4hSAaFLvOtl22-4" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="510" y="1060" width="120" height="80" as="geometry" />
@@ -167,6 +156,32 @@
         </mxCell>
         <mxCell id="PP2J6lRR4GeI_2FX9Bz--2" value="Output current job freelancer jobs with view job in detail button" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="492.5" y="410" width="187.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PP2J6lRR4GeI_2FX9Bz--3" target="PP2J6lRR4GeI_2FX9Bz--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--3" value="INPUT NewJobTitle" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="1390" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PP2J6lRR4GeI_2FX9Bz--5" target="PP2J6lRR4GeI_2FX9Bz--7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--5" value="INPUT &lt;br&gt;NewJobDescription" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="1560" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PP2J6lRR4GeI_2FX9Bz--7" target="PP2J6lRR4GeI_2FX9Bz--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--7" value="INPUT &lt;br&gt;NewJobTag" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="1730" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PP2J6lRR4GeI_2FX9Bz--9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="1019" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PP2J6lRR4GeI_2FX9Bz--9" value="Change job details using NewJobTitle, NewJobDescription and NewJobTag" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="905" y="1880" width="130" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
